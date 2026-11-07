@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.so
+.eggs/
+*.egg
+.venv*/
+.DS_Store
+*.log
+wandb/
+
+# Data and outputs. The dataset is downloaded separately; see README.md.
+# data/ holds generated artifacts, except the shipped validation split.
+# (A directory pattern like data/ cannot be re-included, so ignore contents.)
+data/*
+!data/traj/
+data/traj/*
+!data/traj/split.json
+SMOT4SB
+work_dirs/
+results/
+runs/
+training/
+eval_run/
+*.pth
+*.pt
+*.onnx
+
+# Third-party clone, rebuilt by tools/patch_ppt.py
+PPT/

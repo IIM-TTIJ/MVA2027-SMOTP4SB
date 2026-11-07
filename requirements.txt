@@ -1,0 +1,37 @@
+# Core dependencies (install PyTorch and OpenMMLab separately, see README)
+# PyTorch: uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# OpenMMLab (Track 1 only -- Track 2 needs none of it): scripts/setup_openmmlab.sh
+#   Do NOT use `mim install mmcv` / `pip install mmcv`. Those build the CUDA
+#   extension from source and usually fail; the script installs the prebuilt
+#   wheel from OpenMMLab's cu121/torch2.1.0 index. Pinned: mmcv 2.1.0,
+#   mmengine 0.10.7, mmdet 3.3.0 (mmdet 3.3.0 caps mmcv < 2.2.0).
+
+sahi>=0.11.0
+albumentations>=1.3.0
+pycocotools>=2.0.6
+tqdm>=4.65.0
+numpy>=1.24.0
+Pillow>=9.0.0
+shapely>=2.0.0
+
+# Track 2 (trajectory prediction).
+# PyTorch is installed separately, see the PyTorch line above.
+scipy>=1.10.0
+
+# Track 1 evaluation (SO-HOTA). Not on PyPI, and note the branch: master is a
+# plain fork of upstream TrackEval and has neither the SO_HOTA metric nor the
+# SMOT4SBChallenge dataset class, so installing it silently scores with IoU.
+# Track 2 does not need this -- evaluation/so_hota_tp.py is self-contained.
+trackeval @ git+https://github.com/IIM-TTIJ/TrackEval.git@smot4sb_dev
+
+# Track 1 tracking (OC-SORT, inside the YOLOv8-SMOT submodule). Declared in
+# YOLOv8-SMOT/requirements.txt, which nothing installs, so tools/predict.py
+# failed on a bare ModuleNotFoundError. Listed here because Track 2 needs them
+# too: its input is the tracker's output.
+loguru>=0.7
+filterpy>=1.4
+lap>=0.5
+cython_bbox>=0.1.5
+
+# PPT additionally needs: einops, tensorboard, openpyxl
+# Do not install PPT's own requirements.txt -- it pins torch==1.7.0.

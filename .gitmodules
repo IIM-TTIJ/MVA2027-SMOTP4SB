@@ -1,0 +1,3 @@
+[submodule "YOLOv8-SMOT"]
+	path = YOLOv8-SMOT
+	url = https://github.com/IIM-TTIJ/YOLOv8-SMOT.git
