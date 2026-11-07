@@ -14,7 +14,7 @@ One repository serves both tracks.
 - Challenge website: https://www.mva-org.jp/mva2027/challenge
 - CodaBench, Track 1: https://www.codabench.org/competitions/18322/
 - CodaBench, Track 2: https://www.codabench.org/competitions/18323/
-- Dataset (Google Drive): Track 1 https://drive.google.com/drive/folders/1YAhlo9jezygU50MhTW1YCXiJgAFqQlR-, Track 2 https://drive.google.com/drive/folders/1tg6ex1LYFSsSUcF32zg1i0u58nPtoz0D
+- Dataset (Google Drive), available from November 14, 2026: Track 1 https://drive.google.com/drive/folders/1YAhlo9jezygU50MhTW1YCXiJgAFqQlR-, Track 2 https://drive.google.com/drive/folders/1tg6ex1LYFSsSUcF32zg1i0u58nPtoz0D
 
 The tracks are independent competitions; you can enter either or both. Track 2
 gives video, not trajectories, so a Track 2 entry tracks the birds itself
@@ -64,7 +64,8 @@ score with IoU without warning.
 
 ## Data
 
-Each track has its own dataset package on Google Drive. The train split is the
+Each track has its own dataset package on Google Drive (links above), available
+from November 14, 2026. The train split is the
 same in both; the public-test sequences are numbered differently, so use the
 package of the track you are submitting to. Download it and extract it:
 
