@@ -14,7 +14,7 @@ One repository serves both tracks.
 - Challenge website: https://www.mva-org.jp/mva2027/challenge
 - CodaBench, Track 1: https://www.codabench.org/competitions/18322/
 - CodaBench, Track 2: https://www.codabench.org/competitions/18323/
-- Dataset (Google Drive), available from November 14, 2026: Track 1 https://drive.google.com/drive/folders/1YAhlo9jezygU50MhTW1YCXiJgAFqQlR-, Track 2 https://drive.google.com/drive/folders/1tg6ex1LYFSsSUcF32zg1i0u58nPtoz0D
+- Dataset (Google Drive): the links will be posted here and on the challenge website on November 14, 2026
 
 The tracks are independent competitions; you can enter either or both. Track 2
 gives video, not trajectories, so a Track 2 entry tracks the birds itself
