@@ -245,7 +245,8 @@ tried, why it falls short, and the directions still open are in
 
 ## Private test
 
-The final ranking runs your code on the unreleased private test. What to
+The private test, which selects the finalists, runs your code on unreleased
+sequences. What to
 submit, the `run.sh` interface of each track, the hardware and time limit,
 and how to check your code on the public test laid out the same way
 (`tools/private_test/package_inputs.py`): [docs/private_test.md](docs/private_test.md).

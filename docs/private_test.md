@@ -1,8 +1,11 @@
 # Private test: submitting code
 
-The final ranking comes from the private test, which is not released. Instead,
-each team submits its code and trained model, and the organizers run it on the
-private test sequences and score the output with the same scorer as CodaBench.
+The private test is not released. Its results select the finalists of each
+track, and the awards are then decided among them with a technical paper and an
+online interview ([rules](https://www.mva-org.jp/mva2027/challenge/participation.html)).
+Instead of predictions, each team submits its code and trained model, and the
+organizers run it on the private test sequences and score the output with the
+same scorer as CodaBench.
 This page says what to submit so that it runs without help.
 
 ## What to submit
